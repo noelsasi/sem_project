@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <link rel="shortcut icon" href="images/myicon.ico" type="image/x-icon" />
+      <title>Web Based tool for Disease Detection</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link href="Bootstrap Template/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+      <!--<link rel="stylesheet" href="assets/css/ie9.css" />-->
+      <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+      </noscript>
+   </head>
+   <body>
+      <!-- Wrapper -->
+      <div id="wrapper">
+         <!-- Header -->
+         <header id="header">
+            <div class="logo" style="background-color: white;">
+               <span><img src="images/service-doctor.svg"></span>
+            </div>
+            <div class="content">
+               <div class="inner">
+                  <h1>Web Based tool for Disease Detection</h1>
+                  <p style="color:white;">We are here to help you finding the infectious diseases that are spreading in and out the city<br/>
+                     <a href="#">Sign Up!</a> here and tell us your problems and we'll help you out.
+                  </p>
+               </div>
+            </div>
+            <nav>
+               <ul>
+                  <!--<li style="background-color: black; opacity: 0.7;"><a href="#admin">Admin</a></li>-->
+                  <li style="background-color: black; opacity: 0.7;"><a href="#login">Login</a></li>
+                  <li style="background-color: black; opacity: 0.7;"><a href="#signup">SignUp!</a></li>
+                  <!--<li><a href="#elements">Elements</a></li>-->
+               </ul>
+            </nav>
+         </header>
+         <!-- Main -->
+         <div id="main">
+            <article id="login">
+               <h2 class="major" style="color:white;">Login </h2>
+               <form method="post" action="ValidateLogin.php">
+                  <div class="field half first">
+                     <label for="username">Username</label>
+                     <input type="text" name="username" id="username" />
+                  </div>
+                  <div class="field half">
+                     <label for="password">Password</label>
+                     <input type="password" name="pass" id="password" />
+                  </div>
+                  <ul class="actions">
+                     <li><input type="submit" value="submit" class="special" /></li>
+                     <li><input type="reset" value="Reset" /></li>
+                     <br>
+                  </ul>
+               </form>
+              <li style="list-style: none"><a href="#admin"><input type="button" value="Admin Login" class="special"></a></li><br>
+              <li style="list-style: none"><a href="#doctor"><input type="button" value="Doctor Login" class="special"></a></li>
+            </article>
+            <article id="admin">
+               <h2 class="major" style="color:white;">Admin Login</h2>
+               <form method="post" action="ValidateLoginadmin.php">
+                  <div class="field half first">
+                     <label for="username">Username</label>
+                     <input type="text" name="username" id="username" />
+                  </div>
+                  <div class="field half">
+                     <label for="password">Password</label>
+                     <input type="password" name="pass" id="password" />
+                  </div>
+                  <ul class="actions">
+                     <li><input type="submit" value="submit" class="special" /></li>
+                     <li><input type="reset" value="Reset" /></li>
+                     <br>
+                  </ul>
+               </form>
+            </article>
+            <article id="doctor">
+               <h2 class="major" style="color:white;">Doctor Login</h2>
+               <form method="post" action="ValidateLogindoctor.php">
+                  <div class="field half first">
+                     <label for="username">Doctor Id</label>
+                     <input type="text" name="sno" id="username" />
+                  </div>
+                  <div class="field half">
+                     <label for="password">Password</label>
+                     <input type="password" name="pass" id="password" />
+                  </div>
+                  <ul class="actions">
+                     <li><input type="submit" value="submit" class="special" /></li>
+                     <li><input type="reset" value="Reset" /></li>
+                     <br>
+                  </ul>
+               </form>
+            </article>
+            <!-- Elements -->
+            <article id="signup">
+               <h2 class="major" style="color:white;">SignUp!</h2>
+               <form method="post" action="ServerScript.php">
+                  <div class="field half first">
+                     <label for="username">Username</label>
+                     <input type="text" name="username" id="username" required />
+                  </div>
+                  <div class="field half">
+                     <label for="password">Password</label>
+                     <input type="password" name="pass" id="password" minlength="8" required />
+                  </div>
+                  <div>
+                     <label for="email">Email</label>
+                     <input type="email" name="email" required>
+                  </div>
+                  <br>
+                  <label for="gender">Gender</label>
+                  <div class="field half first">
+                     <input type="radio" id="demo-priority-low" value="m" name="gen">
+                     <label for="demo-priority-low">Male</label>
+                  </div>
+                  <div class="field half">
+                     <input type="radio" id="demo-priority-high" value="f" name="gen">
+                     <label for="demo-priority-high">Female </label>
+                  </div>
+                  <div>
+                     <label for="age">Age</label>
+                     <input type="text" name="age" required>
+                  </div>
+                  <br>
+                  <div>
+                     <label for="tel">Mobile Number</label>
+                     <input type="text" name="pnum" required minlength="10" maxlength="10">
+                  </div>
+                  <ul class="actions">
+                     <li><input type="submit" value="submit" class="special" /></li>
+                     <li><input type="reset" value="Reset" /></li>
+                  </ul>
+               </form>
+            </article>
+         </div>
+         <!-- Footer -->
+         <footer>
+            <h5>By logging in we provide wide range of features to detect the infectious diseases spreading in your area.</h5>
+         </footer>
+      </div>
+      <!-- BG -->
+      <div id="bg"></div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
